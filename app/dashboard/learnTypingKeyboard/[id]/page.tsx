@@ -8,7 +8,7 @@ type server_side = {
   // params: ReactNode
 }
 
-const LearnTypingKeyboardId = ({ params }: { params: server_side }) => {
+const ServerSideId = ({ params }: { params: server_side }) => {
 
   const { id } = params
 
@@ -25,4 +25,4 @@ const LearnTypingKeyboardId = ({ params }: { params: server_side }) => {
   )
 }
 
-export default LearnTypingKeyboardId
+export default ServerSideId

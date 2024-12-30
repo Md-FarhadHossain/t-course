@@ -332,7 +332,7 @@ export const dashboardContent = [
     {
         title: "Learn Typing with Keyboard",
         thumbnail: d12,
-        href: "dashboard/typing-basics/1042521313"
+        href: "dashboard/learnTypingKeyboard/NgImG8bdYG4"
     },
     {
         title: "How to Submit Assignment",
@@ -461,11 +461,63 @@ export const howToDoAssign = [
     },
     {
         id: `YqXld1D4gfE`,
-        label: "অ্যাসাইনমেন্ট কিভাবে করবেন -  Part 3"
+        label: "অ্যাসাইনমেন্ট কিভাবে করবেন -  [ Part 3 ]"
     },
     {
         id: `z4x58xQLiRQ`,
         label: "অ্যাসাইনমেন্ট কিভাবে করবেন - [ Part - 4 ]"
+    },
+    
+]
+export const learnTypingKeyboard = [
+    {
+        id: `NgImG8bdYG4`,
+        label: "Home Row  [ Day 1 ]"
+    },
+    
+    {
+        id: `PeLWU9HFhHs`,
+        label: "Home Row GH [ Day 1 ] [ Part 2 ]"
+    },
+    {
+        id: `WhdEi_nSY_w`,
+        label: "Assignment 1 [ Day 2 ]"
+    },
+    {
+        id: `ONrjc7hk9-4`,
+        label: "Top Row  [ Day 3 ]"
+    },
+    {
+        id: `Kh8RC-g75Fo`,
+        label: "Assignment 2 - Top Row [ Day 4 ]"
+    },
+    {
+        id: `3DwEPLgp15k`,
+        label: "Bottom Row [ Day 5 ]"
+    },
+    {
+        id: `3VMIrgREpns`,
+        label: "Assignment 3 - Bottom Row [ Day 6 ]"
+    },
+    {
+        id: `eUoQasm8ekw`,
+        label: "Number Row [ Day 7 ]"
+    },
+    {
+        id: `ONrjc7hk9-4`,
+        label: "Home Row [ Day 3 ]"
+    },
+    {
+        id: `ONrjc7hk9-4`,
+        label: "Home Row [ Day 3 ]"
+    },
+    {
+        id: `ONrjc7hk9-4`,
+        label: "Home Row [ Day 3 ]"
+    },
+    {
+        id: `ONrjc7hk9-4`,
+        label: "Home Row [ Day 3 ]"
     },
     
 ]
