@@ -17,6 +17,9 @@ import d14 from "../public/d14.png"
 import d15 from "../public/d15.png"
 import d16 from "../public/d16.webp"
 import d17 from "../public/d17.webp"
+import d18 from "../public/d18.webp"
+import d19 from "../public/d19.webp"
+import d20 from "../public/d20.jpg"
 
 
 
@@ -320,42 +323,47 @@ export const videos = [
 export const dashboardContent = [
    
     {
-        title: "Typing Basics",
+        title: "⌨️ Typing Basics",
         thumbnail: d10,
         href: "dashboard/typing-basics/xfQzC9Wto1U"
     },
     {
-        title: "How to do Assignmnet",
-        thumbnail: d11,
+        title: "📝 How to do Assignment",
+        thumbnail: d19,
         href: "dashboard/howToDoAssign/AMehNNka-vI"
     },
     {
-        title: "Learn Typing with Keyboard",
-        thumbnail: d12,
+        title: "📲 Learn Typing With Mobile Phone",
+        thumbnail: d18,
+        href: "dashboard/mobileTypeing/eWrXMvfHo6U"
+    },
+    {
+        title: "✍️ Learn Typing with Keyboard",
+        thumbnail: d20,
         href: "dashboard/learnTypingKeyboard/NgImG8bdYG4"
     },
     {
-        title: "How to Submit Assignment",
+        title: "✅ How to Submit Assignment forCertificate",
         thumbnail: d13,
         href: "dashboard/typing-basics/1042521313"
     },
     {
-        title: "Numpad Typing Course (Bonus)",
+        title: "Numpad Typing Course (Bonus) [ Coming Soon ]",
         thumbnail: d14,
         href: "dashboard/typing-basics/1042521313"
     },
     {
-        title: "Useful Website for Learing Typing",
+        title: "Useful Website for Learing Typing [ Coming Soon ]",
         thumbnail: d15,
         href: "dashboard/typing-basics/1042521313"
     },
     {
-        title: "Learn Bangla Typing Full Guide",
+        title: "Learn Bangla Typing Full Guide [ Coming Soon ]",
         thumbnail: d16,
         href: "dashboard/typing-basics/1042521313"
     },
     {
-        title: "The Ultimate Guide to Type Faster",
+        title: "The Ultimate Guide to Type Faster [ Coming Soon ]",
         thumbnail: d17,
         href: "dashboard/typing-basics/1042521313"
     },
@@ -469,6 +477,13 @@ export const howToDoAssign = [
     },
     
 ]
+export const mobileTypeing = [
+    {
+        id: `eWrXMvfHo6U`,
+        label: "How to type on mobile phone"
+    },
+    
+]
 export const learnTypingKeyboard = [
     {
         id: `NgImG8bdYG4`,
@@ -504,20 +519,20 @@ export const learnTypingKeyboard = [
         label: "Number Row [ Day 7 ]"
     },
     {
-        id: `ONrjc7hk9-4`,
-        label: "Home Row [ Day 3 ]"
+        id: `PFKNA4B7ykE`,
+        label: "Assignment 4 - Number row [ Day 8]"
     },
     {
-        id: `ONrjc7hk9-4`,
-        label: "Home Row [ Day 3 ]"
+        id: `ZZDcV-cNhPA`,
+        label: "Shift Key  -  [ Day 9 ]"
     },
     {
-        id: `ONrjc7hk9-4`,
-        label: "Home Row [ Day 3 ]"
+        id: `vLtTp4jmyI0`,
+        label: "Assignment 5 - Shift Key [ Day 10 ]"
     },
     {
-        id: `ONrjc7hk9-4`,
-        label: "Home Row [ Day 3 ]"
+        id: `oOKvhKYWl9E`,
+        label: "Assignment 6 - Full-Scale Assignment"
     },
     
 ]

@@ -11,7 +11,7 @@ const Dashboard = () => {
         <>
         <DashboardNavbar />
             <section className='container mx-auto'>
-                <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4'>
+                <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-6'>
                     {dashboardContent.map(card => <Link href={`${card.href}`} key={card.title} className='rounded-lg overflow-hidden cardLink'>
 
                         <Card>

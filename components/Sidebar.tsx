@@ -1,6 +1,6 @@
 "use client"
 
-import { howToDoAssign, learnTypingKeyboard, serverSide, typingBasics, videos } from '@/constant'
+import { howToDoAssign, learnTypingKeyboard, mobileTypeing, serverSide, typingBasics, videos } from '@/constant'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -17,6 +17,7 @@ const Sidebar = () => {
     const typingBasicss = pathname.includes("typing-basics")
     const howToDoAssigns = pathname.includes("howToDoAssign")
     const learnTypingKeyboards = pathname.includes("learnTypingKeyboard")
+    const mobilePhones = pathname.includes("mobileTypeing")
 
     const handleClick = () => {
         console.log("clcked")
@@ -179,6 +180,36 @@ const Sidebar = () => {
 
             {/* Learn typing with keyboard */}         
             {learnTypingKeyboards ? learnTypingKeyboard.map((video, index) => {
+                const isActive = pathname.endsWith(video.id)
+
+                return (
+                    <React.Fragment key={video.id}>
+
+                        <div onClick={handleClick} className='mx-3 my-1 rounded-md overflow-hidden'>
+                            <Link
+                                className={cn("px-4 transition-all font- py-3 text-muted-foreground border-b block hover:bg-sky-100 hover:text-black", isActive && "text-black bg-sky-300/50 font-semibold transition-all")}
+
+                                href={`${video.id}`}
+                            >
+
+
+                                <p> <span className={cn("inline-flex transition-all items-center border rounded-md px-2 py-0.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-sky-500/10 text-sky-800 ml-auto mr-1", isActive && "bg-red-500 text-white transition-all")}>
+                                    Class {index + 1}:
+                                </span>
+                                    <span>{video.label}</span>
+                                </p>
+
+                            </Link>
+                        </div>
+
+                    </React.Fragment>
+                )
+            }) : null}
+
+
+
+            {/* Learn typing with Mobile Phone */}         
+            {mobilePhones ? mobileTypeing.map((video, index) => {
                 const isActive = pathname.endsWith(video.id)
 
                 return (
