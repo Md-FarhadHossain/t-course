@@ -1,46 +1,28 @@
 "use client";
 
-import { auth } from "@/app/firebase/config";
-import { signOut } from "firebase/auth";
+import { UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import logo from "@/public/logo.png";
+import logo2 from "@/public/TypingCourse.png";
 
 const DashboardNavbar = () => {
-
-  const signout = () => {
-    // setLoading(true)
-    return signOut(auth);
-  };
-
-  const handleSignout = (e:any) => {
-    e.preventDefault();
-    console.log("first")
-    signout()
-      .then((result) => console.log(result))
-      .catch((err) => console.log(err));
-  };
-
   return (
-    <nav className="border-b flex">
-      <div className=" py-6 lg:lg:w-1/3 lg:border-r flex justify-center w-full">
-        <Link
-          className="text-xl font-semibold bg-sky-600 text-white px-4 py-2"
-          href="/dashboard"
-        >
-          Dashboard
-        </Link>
-      </div>
-      <div>
-        {/* <button onClick={() => {
-          console.log("first")
-          signOut(auth)
-          sessionStorage.removeItem("user")
-        }}>Logout</button> */}
+    <nav className="border-b bg-blue-50 border-blue-200">
+      <div className="container mx-auto flex items-center justify-between">
+        {/* Logo */}
+        <div className="py-5 lg:lg:w-1/3 lg:border-r flex justify-start w-full">
+          <Link className="flex items-center gap-2" href="/dashboard">
+            <Image className="w-[80%]" src={logo} alt="Logo" />
+            <Image className="top-1 relative" src={logo2} alt="Logo" />
+          </Link>
+        </div>
 
-{/* 
-        <button onClick={handleSignout} className="btn btn-warning">
-          Sign Out
-        </button> */}
+        {/* Menu */}
+        <div>
+          <UserButton />
+        </div>
       </div>
     </nav>
   );

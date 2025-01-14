@@ -81,3 +81,9 @@
   transition: color .2s ease-in-out
 }
 
+
+html, body {
+  background-image: linear-gradient(to bottom right, #0998FD, #0476B9);
+  background-repeat: no-repeat;
+  height: auto
+}
